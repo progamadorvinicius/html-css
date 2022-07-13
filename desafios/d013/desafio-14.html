@@ -9,23 +9,26 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         table {
+            width: 500px;
             border-collapse: collapse;
-            width: 300px;
-
+            position: relative;
         }
-
-    
 
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
-        thead {
-            background-color: gray;   
+        tr.destaque {
+            background-color: gray;
+            color: white;
         }
+       
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        } 
 
     </style>
 </head>
@@ -74,7 +77,7 @@
                 <td>0,0</td>
             </tr>
             <tbody>
-            <tr>
+            <tr class="destaque">
                 <th colspan="4">Média de Exatas</th>
                 <td>0,0</td>
             </tr>
@@ -94,11 +97,12 @@
                 <td>0,0</td>
                 <td>0,0</td>
             </tr>
-            <tfoot></tfoot>
+            <tfoot>
             <tr>
                 <th colspan="4">Média Humanas</th>
                 <td>0,0</td>
             </tr>
+        </tfoot>
         </tbody>
     </table>
     
